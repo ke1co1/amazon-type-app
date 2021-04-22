@@ -1,5 +1,6 @@
 export const initialState = {
   basket: [],
+  user: null,
 };
 
 // // selector
@@ -24,7 +25,6 @@ const reducer = (state, action) => {
       );
       //copy basket into temp variable
       let newBasket = [...state.basket];
-      console.log(newBasket);
 
       //now from the items in the basket we will remove the item referenced in the index of the basket
       if (index >= 0) {
@@ -39,6 +39,12 @@ const reducer = (state, action) => {
       return {
         ...state,
         basket: newBasket,
+      };
+
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user,
       };
 
     default:
