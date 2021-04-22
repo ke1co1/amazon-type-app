@@ -27,6 +27,7 @@ app.post("/payments/create", async (request, response) => {
   response.status(201).send({
     clientSecret: paymentIntent.client_secret,
   });
+  return;
 });
 
 // Listen command
