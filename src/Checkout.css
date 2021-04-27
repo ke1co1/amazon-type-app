@@ -22,5 +22,14 @@
 }
 
 .checkout__left {
-  width: 60%;
+  width: 50%;
+}
+.checkout__left {
+  width: 50%;
+}
+
+@media only screen and (max-width: 1026px) {
+  .checkout__title {
+    font-size: 12px;
+  }
 }

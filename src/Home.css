@@ -3,7 +3,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px;
+  /* max-width: 1500px; */
   background-color: rgb(211, 211, 211);
 }
 
@@ -26,3 +26,15 @@
   opacity: 0.9;
   z-index: -1;
 } */
+
+@media only screen and (max-width: 1026px) {
+  .home {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 1500px; */
+    background-color: rgb(211, 211, 211);
+    height: 100vh;
+  }
+}

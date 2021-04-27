@@ -48,3 +48,13 @@
   border-color: #a88732 #9c9e31 #846a29;
   color: #111;
 }
+
+@media only screen and (max-width: 1026px) {
+  .payment__section {
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+  }
+  .payment__title {
+    font-size: 11px;
+  }
+}
